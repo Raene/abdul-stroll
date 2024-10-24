@@ -1,3 +1,32 @@
+
+# Setting Up
+
+create a .env file and set the env variables as specified in the env.example
+
+The database used by the app is Mongodb, so pass in a mongo db uri for the db env.
+
+npm install 
+
+npm run compile to build the app
+
+```
+node build/src/scripts/seedCycleRules.js
+```
+
+the above command will seed sample cycles for testing, feel free to add more cycles as you wish
+
+then:
+
+`node build/src/scripts/seedQuestions.js`
+
+the above will seed questions for the Cycles, please run them in order, 
+
+available route is /question?region=en-US
+
+the default regions in the current seed sre en-US, en-UK, en-SG
+
+we query the questions route based on the region, since the questions should return based on a region
+
 # My Strategy
 
 Following the application specs which say:
