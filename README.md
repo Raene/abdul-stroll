@@ -1,13 +1,12 @@
-
 # Setting Up
 
 create a .env file and set the env variables as specified in the env.example
 
 The database used by the app is Mongodb, so pass in a mongo db uri for the db env.
 
-npm install 
+`npm install` to install the dependencies
 
-npm run compile to build the app
+`npm run compile` to build the app
 
 ```
 node build/src/scripts/seedCycleRules.js
@@ -19,7 +18,7 @@ then:
 
 `node build/src/scripts/seedQuestions.js`
 
-the above will seed questions for the Cycles, please run them in order, 
+the above will seed questions for the Cycles, please run them in order,
 
 available route is /question?region=en-US
 
@@ -52,9 +51,9 @@ E.g daily cycle is 86400 seconds, if it was starting today we get the difference
 
 PROS
 
-* No need to create multiple enums for each cycle e.g DAILY enum, MONTHLY enum, etc, as we measure everything by seconds
-* Easier to maintain and add new cycles since we won;t have to also update the code everytime, an admin endpoint can take care of creating new Cycles and assigning the appropriate number of seconds for a cycle period
+- No need to create multiple enums for each cycle e.g DAILY enum, MONTHLY enum, etc, as we measure everything by seconds
+- Easier to maintain and add new cycles since we won;t have to also update the code everytime, an admin endpoint can take care of creating new Cycles and assigning the appropriate number of seconds for a cycle period
 
 CONS
 
-* The logic might be a bit tricky to understand on the first time
+- The logic might be a bit tricky to understand on the first time
