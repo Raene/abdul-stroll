@@ -13,7 +13,8 @@
     "watch": "tsc -w",
     "prepare": "npm.cmd run compile",
     "pretest": "npm.cmd run compile",
-    "posttest": "npm.cmd run lint"
+    "posttest": "npm.cmd run lint",
+     "start": "npm run compile && node build/src/index.js"
   },
   "author": "Abdulrahman Salau",
   "license": "ISC",
